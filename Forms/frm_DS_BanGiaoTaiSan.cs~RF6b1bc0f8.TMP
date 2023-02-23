@@ -1,0 +1,148 @@
+using System.Collections.Generic;
+using System;
+using E00_SafeCacheDataService.Interface;
+using E00_SafeCacheDataService.Common;
+using E00_Model;
+using E00_System;
+
+namespace E00_API.Contract.TaiSan
+{
+    public partial class TaiSan_NhapLLInfo : IInfo<TaiSan_NhapLLInfo>
+    {
+        //------------------------------------------------------------- 
+
+        #region Member 
+
+        Dictionary<String, String> _field2TableColumnMap;
+        public Decimal ID { get; set; } //ID
+        public Decimal Ma { get; set; } //MA
+        public String SoPhieu { get; set; } //SOPHIEU
+        public DateTime NgayNhap { get; set; } //NGAYNHAP
+        public String SoHoaDon { get; set; } //SOHOADON
+        public DateTime? NgayHoaDon { get; set; } //NGAYHOADON
+        public String NguoiGiao { get; set; } //NGUOIGIAO
+        public String MaKho { get; set; } //MAKHO
+        public String MaNCC { get; set; } //MANCC
+        public String GhiChu { get; set; } //GHICHU
+        public String MaNguoiNhan { get; set; } //MANGUOINHAN
+        public DateTime? NgayTao { get; set; } //NGAYTAO
+        public DateTime? NgayUD { get; set; } //NGAYUD
+        public String MACHINEID { get; set; } //MACHINEID
+        public String ChuKy { get; set; } //CHUKY
+        public DateTime? Den { get; set; } //DEN
+        public String Ten { get; set; } //TEN
+        public Decimal? TrangThai { get; set; } //TRANGTHAI
+        public DateTime? Tu { get; set; } //TU
+        public String USERID { get; set; } //USERID
+        public String USERUD { get; set; } //USERUD
+        public String LoaiNhap { get; set; } //LOAINHAP
+        public String SDTNguoiGiao { get; set; } //SDTNGUOIGIAO
+        public String SoXe { get; set; } //SOXE
+        public String NoiNhap { get; set; } //NOINHAP
+
+        #endregion 
+
+        //-------------------------------------------------------------  
+
+        #region Constructor 
+
+        public TaiSan_NhapLLInfo()
+        {
+
+            ID = 0;
+            Ma = 0;
+            SoPhieu = "";
+            NgayNhap = DateTime.Now;
+            SoHoaDon = "";
+            NgayHoaDon = null;
+            NguoiGiao = "";
+            MaKho = "";
+            MaNCC = "";
+            GhiChu = "";
+            MaNguoiNhan = "";
+            NgayTao = DateTime.Now;
+            NgayUD = DateTime.Now;
+            MACHINEID = "";
+            ChuKy = "";
+            Den = null;
+            Ten = "";
+            TrangThai = 0;
+            Tu = null;
+            USERID = cls_System.sys_User; ;
+            USERUD = cls_System.sys_User; ;
+            LoaiNhap = "";
+            SDTNguoiGiao = "";
+            SoXe = "";
+            NoiNhap = "";
+
+        }
+
+        #endregion
+
+        //-------------------------------------------------------------  
+
+        #region Propertise 
+
+        public object IDValue { get { return ID; } set { ID = (Decimal)value; } }
+        public override string ToString() { return ID + " - "; }
+        public string TableName { get { return cls_TaiSan_NhapLL.tb_TenBang; } }
+        public string PriKeyColumn { get { return cls_TaiSan_NhapLL.col_ID; } }
+        public Dictionary<string, string> Field2TableColumnMap { get { return GetColumMap(); } }
+        public string ColumnSelect
+        {
+            get
+            {
+                return cls_TaiSan_NhapLL.col_ID
+                + "," + cls_TaiSan_NhapLL.col_Ma
+                + "," + cls_TaiSan_NhapLL.col_SoPhieu
+                + "," + cls_TaiSan_NhapLL.col_NgayNhap
+                + "," + cls_TaiSan_NhapLL.col_SoHoaDon
+                + "," + cls_TaiSan_NhapLL.col_NgayHoaDon
+                + "," + cls_TaiSan_NhapLL.col_NguoiGiao
+                + "," + cls_TaiSan_NhapLL.col_MaKho
+                + "," + cls_TaiSan_NhapLL.col_MaNhaCungCap
+                + "," + cls_TaiSan_NhapLL.col_GhiChu
+                + "," + cls_TaiSan_NhapLL.col_MaNguoiNhan
+                + "," + cls_TaiSan_NhapLL.col_NgayTao
+                + "," + cls_TaiSan_NhapLL.col_NgayUD
+                + "," + cls_TaiSan_NhapLL.col_MachineID
+                + "," + cls_TaiSan_NhapLL.col_ChuKy
+                + "," + cls_TaiSan_NhapLL.col_Den
+                + "," + cls_TaiSan_NhapLL.col_Ten
+                + "," + cls_TaiSan_NhapLL.col_TrangThai
+                + "," + cls_TaiSan_NhapLL.col_Tu
+                + "," + cls_TaiSan_NhapLL.col_UserID
+                + "," + cls_TaiSan_NhapLL.col_UserUD
+                + "," + cls_TaiSan_NhapLL.col_LoaiNhap
+                + "," + cls_TaiSan_NhapLL.col_SoDTLienHe
+                + "," + cls_TaiSan_NhapLL.col_SoXe
+                + "," + cls_TaiSan_NhapLL.col_NoiNhap;
+            }
+        }
+        public ESchemaType SchemaType { get { return ESchemaType.Default; } }
+
+
+        #endregion 
+
+        //-------------------------------------------------------------  
+
+        #region Method 
+
+        public void Copy(TaiSan_NhapLLInfo info)
+        {
+
+            ID = info.ID;
+            Ma = info.Ma;
+            SoPhieu = info.SoPhieu;
+            NgayNhap = info.NgayNhap;
+            SoHoaDon = info.SoHoaDon;
+            NgayHoaDon = info.NgayHoaDon;
+            NguoiGiao = info.NguoiGiao;
+            MaKho = info.MaKho;
+            MaNCC = info.MaNCC;
+            GhiChu = info.GhiChu;
+            MaNguoiNhan = info.MaNguoiNhan;
+            NgayTao = info.NgayTao;
+            NgayUD = info.NgayUD;
+            MACHINEID = info.MACHINEID;
+            ChuKy = i

@@ -1,0 +1,342 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>E00_Common</name>
+    </assembly>
+    <members>
+        <member name="T:E00_Common.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:E00_Common.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:E00_Common.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:E00_Common.Bus_Oracle.Update_Table(System.String@,System.String@,System.Data.DataTable,System.Collections.Generic.List{System.String},System.String)" -->
+        <!-- Badly formed XML comment ignored for member "M:E00_Common.Bus_Oracle.Update_Dong(System.String@,System.String@,System.Data.DataRow,System.Collections.Generic.List{System.String},System.String)" -->
+        <member name="M:E00_Common.Api_Common.KetNoi">
+            <summary>
+            Kết nối database từ file XML
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:E00_Common.Api_Common.Insert(System.String@,System.String@,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String},System.String)">
+            <summary>
+            Thêm 1 dòng
+            </summary>
+            <Create>
+            Nguyễn Văn Long - 18/10/2017
+            </Create>
+            <param name="userError">Lỗi thông báo dành cho người dùng cuối</param>
+            <param name="systemError">Lỗi hệ thống dành cho Code</param>
+            <param name="tableName">Tên bảng trong CSDL</param>
+            <param name="dicData">Danh sách dữ liệu dạng Key/Value</param>
+            <param name="lstUnique">Danh sách kiểm tra trùng dữ liệu</param>
+            <param name="lstNotNull">Danh sách cột bắt buộc</param>
+            <param name="schema">Schema theo tháng</param>
+            <returns></returns>
+        </member>
+        <member name="M:E00_Common.Api_Common.Update(System.String@,System.String@,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.List{System.String},System.Collections.Generic.Dictionary{System.String,System.String},System.String)">
+            <summary>
+            Sửa 1 dòng
+            </summary>
+            <Create>
+            Nguyễn Văn Long - 18/10/2017
+            </Create>
+            <param name="userError">Lỗi thông báo dành cho người dùng cuối</param>
+            <param name="systemError">Lỗi hệ thống dành cho Code</param>
+            <param name="tableName">Tên bảng trong CSDL</param>
+            <param name="dicData">Danh sách dữ liệu dạng Key/Value</param>
+            <param name="dicWhere">Danh sách điều kiện dạng Key/Value</param>
+            <param name="schema">Schema theo tháng</param>
+            <returns></returns>
+        </member>
+        <member name="M:E00_Common.Api_Common.Update(System.String@,System.String@,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.List{System.String},System.String)">
+            <summary>
+            Sửa 1 dòng
+            </summary>
+            <Create>
+            Nguyễn Văn Long - 18/10/2017
+            </Create>
+            <param name="userError">Lỗi thông báo dành cho người dùng cuối</param>
+            <param name="systemError">Lỗi hệ thống dành cho Code</param>
+            <param name="tableName">Tên bảng trong CSDL</param>
+            <param name="dicData">Danh sách dữ liệu dạng Key/Value</param>
+            <param name="dicWhere">Danh sách điều kiện dạng Key/Value</param>
+            <param name="schema">Schema theo tháng</param>
+            <returns></returns>
+        </member>
+        <member name="M:E00_Common.Api_Common.UpdateAll(System.String@,System.String@,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String},System.String)">
+            <summary>
+            Cập nhật thông tin nhiều dòng
+            </summary>
+            <Create>
+            Nguyễn Văn Long - 18/10/2017
+            </Create>
+            <param name="userError">Lỗi thông báo dành cho người dùng cuối</param>
+            <param name="systemError">Lỗi hệ thống dành cho Code</param>
+            <param name="tableName">Tên bảng trong CSDL</param>
+            <param name="dicData">Danh sách dữ liệu dạng Key/Value</param>
+            <param name="dicWhere">Danh sách điều kiện dạng Key/Value</param>
+            <param name="schema">Schema theo tháng</param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:E00_Common.Api_Common.Update_Table(System.String@,System.String@,System.Data.DataTable,System.Collections.Generic.List{System.String},System.String)" -->
+        <member name="M:E00_Common.Api_Common.Delete(System.String@,System.String@,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String)">
+            <summary>
+            Xóa 1 dòng
+            </summary>
+            <Create>
+            Nguyễn Văn Long - 18/10/2017
+            </Create>
+            <param name="userError">Lỗi thông báo dành cho người dùng cuối</param>
+            <param name="systemError">Lỗi hệ thống dành cho Code</param>
+            <param name="tableName">Tên bảng trong CSDL</param>
+            <param name="dicWhere">Danh sách điều kiện dạng Key/Value</param>
+            <param name="schema">Schema theo tháng</param>
+            <returns></returns>
+        </member>
+        <member name="M:E00_Common.Api_Common.DeleteAll(System.String@,System.String@,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String)">
+            <summary>
+            Xóa nhiều dòng theo điều kiện where
+            </summary>
+            <Create>
+            Nguyễn Văn Long - 18/10/2017
+            </Create>
+            <param name="userError">Lỗi thông báo dành cho người dùng cuối</param>
+            <param name="systemError">Lỗi hệ thống dành cho Code</param>
+            <param name="tableName">Tên bảng trong CSDL</param>
+            <param name="dicWhere">Danh sách điều kiện dạng Key/Value</param>
+            <param name="schema">Schema theo tháng</param>
+            <returns></returns>
+        </member>
+        <member name="M:E00_Common.Api_Common.DeleteAll(System.String@,System.String@,System.String,System.String,System.String)">
+            <summary>
+            Xóa nhiều dòng theo dang sách ID
+            </summary>
+            <Create>
+            Nguyễn Văn Long - 18/10/2017
+            </Create>
+            <param name="userError">Lỗi thông báo dành cho người dùng cuối</param>
+            <param name="systemError">Lỗi hệ thống dành cho Code</param>
+            <param name="tableName">Tên bảng trong CSDL</param>
+            <param name="lstID">Danh sách ID</param>
+            <param name="schema">Schema theo tháng</param>
+            <returns></returns>
+        </member>
+        <member name="M:E00_Common.Api_Common.GetMax_ID(System.String@,System.String@,System.String,System.String)">
+            <summary>
+            Get ID lớn nhất trong bảng
+            </summary>
+            <Create>
+            Nguyễn Văn Long - 27/04/2018
+            </Create>
+            <param name="userError">Lỗi thông báo dành cho người dùng cuối</param>
+            <param name="systemError">Lỗi hệ thống dành cho Code</param>
+            <param name="tableName">Tên bảng trong CSDL</param>
+            <param name="schema">Schema theo tháng</param>
+            <returns></returns>
+        </member>
+        <member name="M:E00_Common.Api_Common.GetData(System.String@,System.String@,System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.Dictionary{System.String,System.String},System.String)">
+            <summary>
+            Get dữ liệu theo điều kiện
+            </summary>
+            <Create>
+            Nguyễn Văn Long - 18/10/2017
+            </Create>
+            <param name="userError">Lỗi thông báo dành cho người dùng cuối</param>
+            <param name="systemError">Lỗi hệ thống dành cho Code</param>
+            <param name="tableName">Tên bảng trong CSDL</param>
+            <param name="lstField">Danh sách cột hiển thị</param>
+            <param name="dicWhere">Danh sách điều kiện dạng Key/Value</param>
+            <param name="schema">Schema theo tháng</param>
+            <returns></returns>
+        </member>
+        <member name="M:E00_Common.Api_Common.GetDataAll(System.String@,System.String@,System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.Dictionary{System.String,System.String},System.String)">
+            <summary>
+            Get dữ liệu theo điều kiện
+            </summary>
+            <Create>
+            Nguyễn Văn Long - 18/10/2017
+            </Create>
+            <param name="userError">Hiển thị thông báo lỗi cho người dùng</param>
+            <param name="systemError">Hiển thị thông báo lỗi gốc</param>
+            <param name="tableName">Tên bảng</param>
+            <param name="dicWhere">Mảng điều kiện dạng key/value</param>
+            <param name="lstField">Các cột cần hiển thị</param>
+            <param name="schema">Schema/Schema tháng</param>
+            <returns>GetDataAll thành công trả về: DataTable, thất bại: null</returns>
+        </member>
+        <member name="M:E00_Common.Api_Common.Search(System.String@,System.String@,System.String,System.String,System.Int32,System.Collections.Generic.List{System.String},System.Boolean,System.Collections.Generic.Dictionary{System.String,System.String},System.Boolean,System.Collections.Generic.Dictionary{System.String,System.String},System.Boolean,System.Collections.Generic.Dictionary{System.String,System.String},System.Boolean,System.String,System.Boolean,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Nguyễn Văn Long 2017/07/27
+            </summary>
+            <param name="userError">Hiển thị thông báo lỗi cho người dùng</param>
+            <param name="systemError">Hiển thị thông báo lỗi gốc</param>
+            <param name="tableName">Tên bảng</param>
+            <param name="schema">Schema/Schema tháng</param>
+            <param name="count">Số lượng kết quả hiển thị</param>
+            <param name="lst">Danh sách cột cần hiển thị</param>
+            <param name="soSanh2">soSanh2 = true: tìm với điều kiện tuyệt đối =, false: tìm tương đối like của lst2</param>
+            <param name="dicEqual">Mảng điều kiện dạng key/value kết hợp (AND)</param>
+            <param name="soSanh3">soSanh3 = true: tìm với điều kiện tuyệt đối =, false: tìm tương đối like của lst3</param>
+            <param name="dicLike">Mảng điều kiện dạng key/value hoặc (OR)</param>
+            <param name="orderBy1">True: sắp xếp tăng dần, false: sắp xếp giảm dần của orderByName1</param>
+            <param name="orderByName1">Danh sách cột cần sắp xếp</param>
+            <param name="orderBy2">True: sắp xếp tăng dần, false: sắp xếp giảm dần của orderByName2</param>
+            <param name="orderByName2">Danh sách cột cần sắp xếp</param>
+            <returns></returns>
+        </member>
+        <member name="M:E00_Common.Api_Common0.KetNoi">
+            <summary>
+            Kết nối database từ file XML
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:E00_Common.Api_Common0.Insert(System.String@,System.String@,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String},System.String)">
+            <summary>
+            Thêm 1 dòng
+            </summary>
+            <Create>
+            Nguyễn Văn Long - 18/10/2017
+            </Create>
+            <param name="userError">Lỗi thông báo dành cho người dùng cuối</param>
+            <param name="systemError">Lỗi hệ thống dành cho Code</param>
+            <param name="tableName">Tên bảng trong CSDL</param>
+            <param name="dicData">Danh sách dữ liệu dạng Key/Value</param>
+            <param name="lstUnique">Danh sách kiểm tra trùng dữ liệu</param>
+            <param name="lstNotNull">Danh sách cột bắt buộc</param>
+            <param name="schema">Schema theo tháng</param>
+            <returns></returns>
+        </member>
+        <member name="M:E00_Common.Api_Common0.Update(System.String@,System.String@,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.List{System.String},System.Collections.Generic.Dictionary{System.String,System.String},System.String)">
+            <summary>
+            Sửa 1 dòng
+            </summary>
+            <Create>
+            Nguyễn Văn Long - 18/10/2017
+            </Create>
+            <param name="userError">Lỗi thông báo dành cho người dùng cuối</param>
+            <param name="systemError">Lỗi hệ thống dành cho Code</param>
+            <param name="tableName">Tên bảng trong CSDL</param>
+            <param name="dicData">Danh sách dữ liệu dạng Key/Value</param>
+            <param name="dicWhere">Danh sách điều kiện dạng Key/Value</param>
+            <param name="schema">Schema theo tháng</param>
+            <returns></returns>
+        </member>
+        <member name="M:E00_Common.Api_Common0.UpdateAll(System.String@,System.String@,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.Collections.Generic.Dictionary{System.String,System.String},System.String)">
+            <summary>
+            Cập nhật thông tin nhiều dòng
+            </summary>
+            <Create>
+            Nguyễn Văn Long - 18/10/2017
+            </Create>
+            <param name="userError">Lỗi thông báo dành cho người dùng cuối</param>
+            <param name="systemError">Lỗi hệ thống dành cho Code</param>
+            <param name="tableName">Tên bảng trong CSDL</param>
+            <param name="dicData">Danh sách dữ liệu dạng Key/Value</param>
+            <param name="dicWhere">Danh sách điều kiện dạng Key/Value</param>
+            <param name="schema">Schema theo tháng</param>
+            <returns></returns>
+        </member>
+        <member name="M:E00_Common.Api_Common0.Delete(System.String@,System.String@,System.String,System.Collections.Generic.Dictionary{System.String,System.String},System.String)">
+            <summary>
+            Xóa 1 dòng
+            </summary>
+            <Create>
+            Nguyễn Văn Long - 18/10/2017
+            </Create>
+            <param name="userError">Lỗi thông báo dành cho người dùng cuối</param>
+            <param name="systemError">Lỗi hệ thống dành cho Code</param>
+            <param name="tableName">Tên bảng trong CSDL</param>
+            <param name="dicWhere">Danh sách điều kiện dạng Key/Value</param>
+            <param name="schema">Schema theo tháng</param>
+            <returns></returns>
+        </member>
+        <member name="M:E00_Common.Api_Common0.GetData(System.String@,System.String@,System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.Dictionary{System.String,System.String},System.String)">
+            <summary>
+            Get dữ liệu theo điều kiện
+            </summary>
+            <Create>
+            Nguyễn Văn Long - 18/10/2017
+            </Create>
+            <param name="userError">Lỗi thông báo dành cho người dùng cuối</param>
+            <param name="systemError">Lỗi hệ thống dành cho Code</param>
+            <param name="tableName">Tên bảng trong CSDL</param>
+            <param name="lstField">Danh sách cột hiển thị</param>
+            <param name="dicWhere">Danh sách điều kiện dạng Key/Value</param>
+            <param name="schema">Schema theo tháng</param>
+            <returns></returns>
+        </member>
+        <member name="M:E00_Common.Api_Common0.GetDataAll(System.String@,System.String@,System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.Dictionary{System.String,System.String},System.String)">
+            <summary>
+            Get dữ liệu theo điều kiện
+            </summary>
+            <Create>
+            Nguyễn Văn Long - 18/10/2017
+            </Create>
+            <param name="userError">Hiển thị thông báo lỗi cho người dùng</param>
+            <param name="systemError">Hiển thị thông báo lỗi gốc</param>
+            <param name="tableName">Tên bảng</param>
+            <param name="dicWhere">Mảng điều kiện dạng key/value</param>
+            <param name="lstField">Các cột cần hiển thị</param>
+            <param name="schema">Schema/Schema tháng</param>
+            <returns>GetDataAll thành công trả về: DataTable, thất bại: null</returns>
+        </member>
+        <member name="M:E00_Common.Api_Common0.Search(System.String@,System.String@,System.String,System.String,System.Int32,System.Collections.Generic.List{System.String},System.Boolean,System.Collections.Generic.Dictionary{System.String,System.String},System.Boolean,System.Collections.Generic.Dictionary{System.String,System.String},System.Boolean,System.Collections.Generic.Dictionary{System.String,System.String},System.Boolean,System.String,System.Boolean,System.String,System.Boolean,System.Boolean)">
+            <summary>
+            Nguyễn Văn Long 2017/07/27
+            </summary>
+            <param name="userError">Hiển thị thông báo lỗi cho người dùng</param>
+            <param name="systemError">Hiển thị thông báo lỗi gốc</param>
+            <param name="tableName">Tên bảng</param>
+            <param name="schema">Schema/Schema tháng</param>
+            <param name="count">Số lượng kết quả hiển thị</param>
+            <param name="lst">Danh sách cột cần hiển thị</param>
+            <param name="soSanh2">soSanh2 = true: tìm với điều kiện tuyệt đối =, false: tìm tương đối like của lst2</param>
+            <param name="dicEqual">Mảng điều kiện dạng key/value kết hợp (AND)</param>
+            <param name="soSanh3">soSanh3 = true: tìm với điều kiện tuyệt đối =, false: tìm tương đối like của lst3</param>
+            <param name="dicLike">Mảng điều kiện dạng key/value hoặc (OR)</param>
+            <param name="orderBy1">True: sắp xếp tăng dần, false: sắp xếp giảm dần của orderByName1</param>
+            <param name="orderByName1">Danh sách cột cần sắp xếp</param>
+            <param name="orderBy2">True: sắp xếp tăng dần, false: sắp xếp giảm dần của orderByName2</param>
+            <param name="orderByName2">Danh sách cột cần sắp xếp</param>
+            <returns></returns>
+        </member>
+        <member name="M:E00_Common.cls_Common.Get_Tuoi(System.String)">
+            <summary>
+            Tính tuổi theo ngày sinh
+            </summary>
+            <param name="ngaySinh">Ngày sinh định dạng dd/MM/yyyy</param>
+            <returns></returns>
+        </member>
+        <member name="M:E00_Common.Acc_Oracle.Get_Data(System.String,System.Data.OracleClient.OracleParameter[])">
+            <summary>
+            get datatable
+            </summary>
+            <param name="sql">query sql</param>
+            <returns></returns>
+        </member>
+        <member name="M:E00_Common.Acc_Oracle.Execute_Data(System.String@,System.String@,System.String,System.Data.OracleClient.OracleParameter[])">
+            <summary>
+            execute and return true if success - false if fail
+            </summary>
+            <param name="sql">query sql</param>
+            <returns></returns>
+        </member>
+        <member name="M:E00_Common.Acc_Oracle.Get_MMYY">
+            <summary>
+            Get current database's mmyy
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
